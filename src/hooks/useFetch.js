@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export const useFetch = (url) => {
 	const initialState = {
@@ -6,15 +6,25 @@ export const useFetch = (url) => {
 		error: null,
 		loading: true,
 	};
+
+	const isMounted = useRef(true);
 	const [state, setState] = useState(initialState);
+
+	useEffect(() => {
+		return () => {
+			isMounted.current = false;
+		};
+	}, []);
 
 	const getData = async () => {
 		setState(initialState);
 		try {
-			setTimeout(async () => {
-				const data = await (await fetch(url)).json();
-				setState({ data, error: null, loading: false });
-			}, 1000);
+			const data = await (await fetch(url)).json();
+			setTimeout(() => {
+				isMounted.current
+					? setState({ data, error: null, loading: false })
+					: console.log('No se llama el setState');
+			}, 500);
 		} catch (error) {
 			console.log(error);
 			setState({ data: null, error: 'Ha ocurrido un error', loading: false });
