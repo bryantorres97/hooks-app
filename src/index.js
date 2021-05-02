@@ -5,13 +5,18 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 // eslint-disable-next-line
 import { CounterApp } from './components/01-useState/CounterApp';
+// eslint-disable-next-line
 import CounterWithCustomHook from './components/01-useState/CounterWithCustomHook';
+import { FormWithCustomHook } from './components/02-useEffect/FormWithCustomHook';
+// import { SimpleForm } from './components/02-useEffect/SimpleForm';
 
 ReactDOM.render(
 	<React.StrictMode>
 		{/* <HooksApp /> */}
 		{/* <CounterApp /> */}
-		<CounterWithCustomHook />
+		{/* <CounterWithCustomHook /> */}
+		{/* <SimpleForm /> */}
+		<FormWithCustomHook />
 	</React.StrictMode>,
 	document.getElementById('root')
 );
