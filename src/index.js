@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { LayoutEffect } from './components/05-useLayoutEffect/LayoutEffect';
+import { Memorize } from './components/06-useMemo/Memorize';
+// import { LayoutEffect } from './components/05-useLayoutEffect/LayoutEffect';
 // import { RealExampleRef } from './components/04-useRef/RealExampleRef';
 // import HooksApp from './HooksApp';
 // import { CounterApp } from './components/01-useState/CounterApp';
@@ -22,7 +23,8 @@ ReactDOM.render(
 		{/* <MultipleCustomHooks /> */}
 		{/* <FocusScreen /> */}
 		{/* <RealExampleRef /> */}
-		<LayoutEffect />
+		{/* <LayoutEffect /> */}
+		<Memorize />
 	</React.StrictMode>,
 	document.getElementById('root')
 );
