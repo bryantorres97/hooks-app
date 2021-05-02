@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Memorize } from './components/06-useMemo/Memorize';
+import { MemoHook } from './components/06-useMemo/MemoHook';
+// import { Memorize } from './components/06-useMemo/Memorize';
 // import { LayoutEffect } from './components/05-useLayoutEffect/LayoutEffect';
 // import { RealExampleRef } from './components/04-useRef/RealExampleRef';
 // import HooksApp from './HooksApp';
@@ -24,7 +25,8 @@ ReactDOM.render(
 		{/* <FocusScreen /> */}
 		{/* <RealExampleRef /> */}
 		{/* <LayoutEffect /> */}
-		<Memorize />
+		{/* <Memorize /> */}
+		<MemoHook />
 	</React.StrictMode>,
 	document.getElementById('root')
 );
