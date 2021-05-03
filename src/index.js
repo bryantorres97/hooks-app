@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { MemoHook } from './components/06-useMemo/MemoHook';
-import { CallbackHook } from './components/06-useMemo/CallbackHook';
+import { Padre } from './components/07-tarea-memo/Padre';
+// import { MemoHook } from './components/06-useMemo/MemoHook';
+// import { CallbackHook } from './components/06-useMemo/CallbackHook';
 // import { Memorize } from './components/06-useMemo/Memorize';
 // import { LayoutEffect } from './components/05-useLayoutEffect/LayoutEffect';
 // import { RealExampleRef } from './components/04-useRef/RealExampleRef';
@@ -28,7 +29,8 @@ ReactDOM.render(
 		{/* <LayoutEffect /> */}
 		{/* <Memorize /> */}
 		{/* <MemoHook /> */}
-		<CallbackHook />
+		{/* <CallbackHook /> */}
+		<Padre />
 	</React.StrictMode>,
 	document.getElementById('root')
 );
