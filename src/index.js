@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Padre } from './components/07-tarea-memo/Padre';
+import TodoApp from './components/08-useReducer/TodoApp';
+// import { Padre } from './components/07-tarea-memo/Padre';
 // import { MemoHook } from './components/06-useMemo/MemoHook';
 // import { CallbackHook } from './components/06-useMemo/CallbackHook';
 // import { Memorize } from './components/06-useMemo/Memorize';
@@ -30,11 +31,13 @@ ReactDOM.render(
 		{/* <Memorize /> */}
 		{/* <MemoHook /> */}
 		{/* <CallbackHook /> */}
-		<Padre />
+		{/* <Padre /> */}
+		<TodoApp />
 	</React.StrictMode>,
 	document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// // If you want to start measuring performance in your app, pass a function
+// // to log results (for example: reportWebVitals(console.log))
+// // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// import './components/08-useReducer/intro-reducer';
